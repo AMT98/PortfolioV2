@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+import Typed from 'react-typed';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
@@ -15,16 +16,49 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex justify-center items-center flex-col relative z-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Hi, my name is Aswin Malla
-        </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center"
         >
-          {/* <h1 className={styles.heroHeading}>Aswin Malla</h1> */}
-          {/* <div className={styles.heroDText} /> */}
-          <h1 className={styles.heroHeading}>Software Developer</h1>
+          <div name="home">
+            <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full w-full px-4 md:flex-row">
+              <motion.div variants={textVariant(1.1)} className="flex flex-col justify-center h-full">
+                <h2
+                  className="md:text-2xl text-lg font-bold text-indigo-500 "
+                >
+                  Hi
+                  <span className="wave">👋</span>
+                  ,my name is
+                </h2>
+                <h3
+                  className="text-[#CCD6f6] md:text-9xl text-5xl font-bold py-4 max-w-7xl "
+                >
+                  Aswin Malla.
+                </h3>
+                <div>
+                  <p
+                    className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-[#000000]"
+                  >
+                    I'm a
+                    <Typed
+                      className="md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-indigo-500"
+                      strings={[
+                        'software developer.',
+                        'problem solver.',
+                        'web developer.',
+                        'passionate learner.',
+                        'adaptable multitasker.',
+                        'analytical thinker.',
+                      ]}
+                      typeSpeed={70}
+                      backSpeed={10}
+                      loop
+                    />
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </motion.div>
       </div>
 
