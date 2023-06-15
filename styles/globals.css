@@ -42,14 +42,6 @@
   filter: blur(125px);
 }
 
-.hero-gradient {
-  background: linear-gradient(
-    97.86deg,
-    #092aff 0%,
-    #3934c7 53.65%,
-    #3934c7 100%
-  );
-}
 
 .gradient-02 {
   position: absolute;
@@ -109,7 +101,7 @@
   left: 0px;
   top: 0px;
 
-  background: #8d39a3;
+  background: #ffffff;
   filter: blur(175px);
 }
 
@@ -120,6 +112,6 @@
   left: 37%;
   bottom: 0;
 
-  background: #65c4fa;
+  background: #ffffff;
   filter: blur(150px);
 }

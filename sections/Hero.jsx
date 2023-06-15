@@ -13,7 +13,7 @@ const Hero = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col`}
+      className={`${styles.innerWidth} mx-auto flex flex-col items-center justify-center`}
     >
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.div
@@ -22,33 +22,27 @@ const Hero = () => (
         >
           <div name="home">
             <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full w-full px-4 md:flex-row">
-              <motion.div variants={textVariant(1.1)} className="flex flex-col justify-center h-full">
-                <h2
-                  className="md:text-2xl text-lg font-bold text-indigo-500 "
-                >
-                  Hi
-                  <span className="wave">👋</span>
-                  ,my name is
-                </h2>
+              <motion.div variants={textVariant(1.1)} className="flex flex-col justify-center items-center h-full">
+                <img src="/heroImage.png" alt="heroImg" className="w-[250px] h-[250px] bg-indigo-500 rounded-full" />
                 <h3
-                  className="text-[#CCD6f6] md:text-9xl text-5xl font-bold py-4 max-w-7xl "
-                >
-                  Aswin Malla.
+                  className="text-[#CCD6f6] md:text-4xl text-xl font-bold py-4 max-w-7xl "
+                ><span className="wave mr-2">👋</span>
+                  My name is Aswin
                 </h3>
                 <div>
                   <p
-                    className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-[#000000]"
+                    className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-[#d7d3d3]"
                   >
-                    I'm a
+                    I'm
                     <Typed
-                      className="md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-indigo-500"
+                      className="w-full md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-indigo-500"
                       strings={[
-                        'software developer.',
-                        'problem solver.',
-                        'web developer.',
-                        'passionate learner.',
-                        'adaptable multitasker.',
-                        'analytical thinker.',
+                        'a software developer',
+                        'a problem solver',
+                        'a web developer',
+                        'a passionate learner',
+                        'an adaptable multitasker',
+                        'an analytical thinker',
                       ]}
                       typeSpeed={70}
                       backSpeed={10}
@@ -64,12 +58,12 @@ const Hero = () => (
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px]"
+        className="relative w-full -mt-[370px]"
       >
-        <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+        <div className="absolute w-full h-[300px] rounded-tl-[140px] z-[0] -top-[30px]" />
 
         <img
-          src="/cover.png"
+          src="/map.png"
           alt="hero_cover"
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
