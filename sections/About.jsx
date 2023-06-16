@@ -16,25 +16,46 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+      <TypingText title="| About Me" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[22px] text-[10px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{' '}
+        <span className="font-extrabold text-white">I am a full-stack developer </span> {' '}with experience working with the
+        PERN stack (PostgreSQL, Express, React, and Node.js). I have a
+        passion for creating efficient and visually pleasing web
+        applications. I am constantly seeking to expand my knowledge and
+        stay up to date with the latest web development technologies.
+
+        I have experience in developing responsive front-end using{' '}
         <span className="font-extrabold text-white">
-          madness of the metaverse
+
+          React, Next, Bootstrap, and TailwindCSS and a solid
+          understanding of HTML, CSS, and JavaScript/TypeScript.
         </span>{' '}
+
+        On the{' '}
+        <span className="font-extrabold text-white">
+
+          back-end, I have experience with
+          Node.js, Express, and
+          PostgreSQL.
+        </span>{' '}
+
+      </motion.p>
+      <motion.p variants={fadeIn('up', 'tween', 0.3, 1)}
+        className="mt-[8px] font-normal sm:text-[22px] text-[10px] text-center text-secondary-white"
+      >
+        I am a team player and have excellent communication
+        skills, which have helped me to work effectively with remote
+        teams. I am also a quick learner and am always looking for new
+        challenges. I am excited to continue to develop my skills and
+        work on new and exciting projects. When I am not coding, I enjoy
+        reading about new technologies, hiking, working out, cooking,
+        and spending time with my family.
         of today, using only{' '}
-        <span className="font-extrabold text-white">VR</span> devices you can
-        easily explore the metaverse world you want, turn your dreams into
-        reality. Let's{' '}
-        <span className="font-extrabold text-white">explore</span> the madness
-        of the metaverse by scrolling down
+
       </motion.p>
 
       <motion.img
