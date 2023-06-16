@@ -20,7 +20,7 @@ const About = () => (
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[22px] text-[10px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[18px] text-[8px] text-center text-secondary-white"
       >
         <span className="font-extrabold text-white">I am a full-stack developer </span> {' '}with experience working with the
         PERN stack (PostgreSQL, Express, React, and Node.js). I have a
@@ -45,7 +45,7 @@ const About = () => (
 
       </motion.p>
       <motion.p variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="mt-[8px] font-normal sm:text-[22px] text-[10px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[18px] text-[8px] text-center text-secondary-white"
       >
         I am a team player and have excellent communication
         skills, which have helped me to work effectively with remote
@@ -54,7 +54,6 @@ const About = () => (
         work on new and exciting projects. When I am not coding, I enjoy
         reading about new technologies, hiking, working out, cooking,
         and spending time with my family.
-        of today, using only{' '}
 
       </motion.p>
 
