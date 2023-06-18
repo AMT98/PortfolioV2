@@ -60,13 +60,13 @@ const Hero = () => (
 
                 <div className="rounded-xl flex gap-3 p-2 mt-4">
                   <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
-                    <FaGithub size={25} />
+                    <FaGithub size={25} color="white" />
                   </p>
                   <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
-                    <FaLinkedinIn size={25} />
+                    <FaLinkedinIn size={25} color="blue" />
                   </p>
                   <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
-                    <HiOutlineMail size={25} />
+                    <HiOutlineMail size={25} color="red" />
                   </p>
                   <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
                     <FcDocument size={25} />

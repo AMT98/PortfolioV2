@@ -13,11 +13,11 @@ const Page = () => (
     <div className="relative">
       {/* <GetStarted /> */}
       <div />
-      <WhatsNew />
+      {/* <WhatsNew /> */}
     </div>
-    <World />
+    {/* <World /> */}
     <div className="relative">
-      <Insights />
+      {/* <Insights /> */}
       <div />
       <Feedback />
     </div>
