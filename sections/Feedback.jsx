@@ -20,18 +20,18 @@ const Feedback = () => (
         className="flex-[0.5] lg:max-w-[370px] flex justify-end flex-col gradient-05 sm:p-8 p-4 rounded-[32px] border-[1px] border-[#6A6A6A] relative"
       >
         <div className="feedback-gradient" />
-        <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-indigo-500">
+        <div className="mb-10">
+          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-indigo-900">
             Let's start a conversation
           </h4>
-        </div>
 
-        <span className="text-indigo-500">Email:</span>
-        <h1 className="mb-2  text-black">
-          aswinmalla12@gmail.com
-        </h1>
-        <span className="text-indigo-500">Phone:</span>
-        <h1 className="pb-3 text-black">(720)-418-1221</h1>
+          <span className="text-indigo-900">Email:</span>
+          <h1 className="mb-2  text-black">
+            aswinmalla12@gmail.com
+          </h1>
+          <span className="text-indigo-900">Phone:</span>
+          <h1 className="pb-3 text-black">(720)-418-1221</h1>
+        </div>
 
       </motion.div>
 
@@ -44,7 +44,7 @@ const Feedback = () => (
           method="POST"
           className=" flex flex-col w-full md:w-1/2"
         >
-          <h1 className="text-2xl mb-4 text-indigo-500">
+          <h1 className="text-2xl mb-4 text-indigo-900">
             Please fill out all sections
           </h1>
           <input
@@ -77,7 +77,7 @@ const Feedback = () => (
 
         <motion.div
           variants={zoomIn(0.4, 1)}
-          className="lg:block hidden absolute -left-[10%] top-[3%]"
+          className="lg:block hidden absolute -left-[1%] -top-[3%]"
         >
           <img
             src="/conversation.webp"
