@@ -44,7 +44,6 @@ const Feedback = () => (
           method="POST"
           className=" flex flex-col w-full md:w-1/2"
         >
-          <p className="py-2 text-[#838DAB]">Let's start a conversation</p>
           <h1 className="text-2xl mb-4 text-indigo-500">
             Please fill out all sections
           </h1>
