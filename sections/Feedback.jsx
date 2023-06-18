@@ -67,7 +67,7 @@ const Feedback = () => (
           />
           <button
             type="submit"
-            className="p-2 bg-indigo-500 border-2 rounded-md text-white hover:font-bold mt-4 hover:text-black hover:bg-green-400 focus:outline-none"
+            className="p-2 bg-indigo-500 border-2 border-indigo-500 hover:border-green-600 rounded-md text-white hover:font-bold mt-4 hover:text-black hover:bg-green-400 focus:outline-none"
           >
             Send 🚀
           </button>

@@ -20,9 +20,9 @@ const About = () => (
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center w-[50%] text-secondary-white"
       >
-        <span className="font-extrabold text-white">I am a full-stack developer </span> {' '}with experience working with the
+        <span className="font-extrabold text-indigo-500">I am a full-stack developer </span> {' '}with experience working with the
         PERN stack (PostgreSQL, Express, React, and Node.js). I have a
         passion for creating efficient and visually pleasing web
         applications. I am constantly seeking to expand my knowledge and
@@ -30,19 +30,17 @@ const About = () => (
 
       </motion.p>
       <motion.p variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[20px] text-[12px] w-[50%] text-center text-secondary-white"
       >
         I have experience in developing responsive front-end using{' '}
-        <span className="font-extrabold text-white">
+        <span className="font-extrabold text-indigo-500">
 
           React, Next, Bootstrap, and TailwindCSS and a solid
           understanding of HTML, CSS, and JavaScript/TypeScript.
         </span>{' '}
 
-        On the{' '}
-        <span className="font-extrabold text-white">
-
-          back-end, I have experience with
+        On the back-end, I have experience with{' '}
+        <span className="font-extrabold text-indigo-500">
           Node.js, Express, and
           PostgreSQL.
         </span>{' '}
