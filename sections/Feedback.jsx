@@ -81,9 +81,9 @@ const Feedback = () => (
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
           <img
-            src="/stamp.png"
+            src="/conversation.webp"
             alt="stamp"
-            className="w-[155px] h-[155px] object-contain"
+            className="w-[155px] h-[155px] object-contain rounded-full"
           />
         </motion.div>
       </motion.div>
