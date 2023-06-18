@@ -22,17 +22,14 @@ const Feedback = () => (
         <div className="feedback-gradient" />
         <div className="mb-10">
           <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-indigo-900">
-            Let's start a conversation
+            Let's start a conversation 💬
           </h4>
 
-          <span className="text-indigo-900">Email:</span>
-          <h1 className="mb-2  text-black">
-            aswinmalla12@gmail.com
-          </h1>
-          <span className="text-indigo-900">Phone:</span>
+          <span className="text-indigo-900">Email 📧:</span>
+          <h1 className="mb-2  text-black">aswinmalla12@gmail.com</h1>
+          <span className="text-indigo-900">Phone 📞:</span>
           <h1 className="pb-3 text-black">(720)-418-1221</h1>
         </div>
-
       </motion.div>
 
       <motion.div
@@ -44,7 +41,7 @@ const Feedback = () => (
           method="POST"
           className=" flex flex-col w-full md:w-1/2"
         >
-          <h1 className="text-2xl mb-4 text-indigo-900">
+          <h1 className="text-2xl mb-4 text-indigo-900 font-bold">
             Please fill out all sections
           </h1>
           <input
@@ -68,6 +65,12 @@ const Feedback = () => (
             rows="6"
             className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
           />
+          <button
+            type="submit"
+            className="p-2 bg-indigo-500 border-2 rounded-md text-white hover:font-bold mt-4 hover:text-black hover:bg-green-400 focus:outline-none"
+          >
+            Send 🚀
+          </button>
 
           {/* <button className="text-[#0A192F] bg-gradient-to-r from-[#00CDAE] to-[#00CCAF] 0 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
             Send
