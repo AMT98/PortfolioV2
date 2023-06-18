@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+import { MdOutlineSend } from 'react-icons/md';
 import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
@@ -20,30 +21,60 @@ const Feedback = () => (
       >
         <div className="feedback-gradient" />
         <div>
-          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
-            Samantha
+          <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-indigo-500">
+            Let's start a conversation
           </h4>
-          <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
-            Founder Metaverus
-          </p>
         </div>
 
-        <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
-          “With the development of today's technology, metaverse is very
-          useful for today's work, or can be called web 3.0. by using
-          metaverse you can use it as anything”
-        </p>
+        <span className="text-indigo-500">Email:</span>
+        <h1 className="mb-2  text-black">
+          aswinmalla12@gmail.com
+        </h1>
+        <span className="text-indigo-500">Phone:</span>
+        <h1 className="pb-3 text-black">(720)-418-1221</h1>
+
       </motion.div>
 
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <img
-          src="/planet-09.png"
-          alt="planet-09"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
-        />
+        <form
+          action="https://getform.io/f/a012141e-4460-45a9-9393-bb60cc0767c2"
+          method="POST"
+          className=" flex flex-col w-full md:w-1/2"
+        >
+          <p className="py-2 text-[#838DAB]">Let's start a conversation</p>
+          <h1 className="text-2xl mb-4 text-indigo-500">
+            Please fill out all sections
+          </h1>
+          <input
+            required
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+          />
+          <input
+            required
+            type="text"
+            name="email"
+            placeholder="Enter your email"
+            className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+          />
+          <textarea
+            required
+            name="message"
+            placeholder="Enter your message"
+            rows="6"
+            className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+          />
+
+          {/* <button className="text-[#0A192F] bg-gradient-to-r from-[#00CDAE] to-[#00CCAF] 0 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            Send
+          </button> */}
+          <MdOutlineSend size={25} className="ml-1" />
+        </form>
 
         <motion.div
           variants={zoomIn(0.4, 1)}
