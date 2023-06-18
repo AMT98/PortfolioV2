@@ -20,7 +20,7 @@ const About = () => (
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[18px] text-[8px] text-center text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center text-secondary-white"
       >
         <span className="font-extrabold text-white">I am a full-stack developer </span> {' '}with experience working with the
         PERN stack (PostgreSQL, Express, React, and Node.js). I have a
@@ -28,6 +28,10 @@ const About = () => (
         applications. I am constantly seeking to expand my knowledge and
         stay up to date with the latest web development technologies.
 
+      </motion.p>
+      <motion.p variants={fadeIn('up', 'tween', 0.3, 1)}
+        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center text-secondary-white"
+      >
         I have experience in developing responsive front-end using{' '}
         <span className="font-extrabold text-white">
 
@@ -42,18 +46,6 @@ const About = () => (
           Node.js, Express, and
           PostgreSQL.
         </span>{' '}
-
-      </motion.p>
-      <motion.p variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="mt-[8px] font-normal sm:text-[18px] text-[8px] text-center text-secondary-white"
-      >
-        I am a team player and have excellent communication
-        skills, which have helped me to work effectively with remote
-        teams. I am also a quick learner and am always looking for new
-        challenges. I am excited to continue to develop my skills and
-        work on new and exciting projects. When I am not coding, I enjoy
-        reading about new technologies, hiking, working out, cooking,
-        and spending time with my family.
 
       </motion.p>
 

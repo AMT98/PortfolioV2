@@ -8,8 +8,8 @@ import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
 import { ExploreCard, TitleText, TypingText } from '../components';
 
-const Explore = () => {
-  const [active, setActive] = useState('world-2');
+const Projects = () => {
+  const [active, setActive] = useState('world-1');
 
   return (
     <section className={`${styles.paddings}`} id="explore">
@@ -41,4 +41,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default Projects;

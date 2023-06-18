@@ -1,6 +1,6 @@
 import Hero from './Hero';
 import About from './About';
-import Explore from './Explore';
+import Projects from './Projects';
 import GetStarted from './GetStarted';
 import WhatsNew from './WhatsNew';
 import World from './World';
@@ -10,7 +10,7 @@ import Feedback from './Feedback';
 export {
   Hero,
   About,
-  Explore,
+  Projects,
   GetStarted,
   WhatsNew,
   World,
