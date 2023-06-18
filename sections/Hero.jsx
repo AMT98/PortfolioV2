@@ -2,6 +2,9 @@
 
 import { motion } from 'framer-motion';
 
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { FcDocument } from 'react-icons/fc';
+import { HiOutlineMail } from 'react-icons/hi';
 import Typed from 'react-typed';
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
@@ -22,17 +25,21 @@ const Hero = () => (
         >
           <div name="home">
             <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center h-full w-full px-4 md:flex-row">
-              <motion.div variants={textVariant(1.1)} className="flex flex-col justify-center items-center h-full">
-                <img src="/heroImage.png" alt="heroImg" className="w-[250px] h-[250px] bg-indigo-500 rounded-full" />
-                <h3
-                  className="text-[#CCD6f6] md:text-4xl text-xl font-bold py-4 max-w-7xl "
-                ><span className="wave mr-2">👋</span>
+              <motion.div
+                variants={textVariant(1.1)}
+                className="flex flex-col justify-center items-center h-full"
+              >
+                <img
+                  src="/heroImage.png"
+                  alt="heroImg"
+                  className="w-[250px] h-[250px] bg-indigo-500 rounded-full"
+                />
+                <h3 className="text-[#CCD6f6] md:text-4xl text-xl font-bold py-4 max-w-7xl ">
+                  <span className="wave mr-2">👋</span>
                   My name is Aswin
                 </h3>
                 <div>
-                  <p
-                    className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-[#d7d3d3]"
-                  >
+                  <p className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-[#d7d3d3]">
                     I'm
                     <Typed
                       className="w-full md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-indigo-500"
@@ -48,6 +55,21 @@ const Hero = () => (
                       backSpeed={10}
                       loop
                     />
+                  </p>
+                </div>
+
+                <div className="rounded-xl flex gap-3 p-2 mt-4">
+                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                    <FaGithub size={25} />
+                  </p>
+                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                    <FaLinkedinIn size={25} />
+                  </p>
+                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                    <HiOutlineMail size={25} />
+                  </p>
+                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                    <FcDocument size={25} />
                   </p>
                 </div>
               </motion.div>
