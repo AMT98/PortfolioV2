@@ -47,7 +47,7 @@ export const newFeatures = [
   },
 ];
 
-export const insights = [
+export const Experience = [
   {
     imgUrl: '/planet-06.png',
     title: 'The launch of the Metaverse makes Elon musk ketar-ketir',

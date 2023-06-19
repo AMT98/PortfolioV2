@@ -17,12 +17,12 @@ module.exports = {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
       },
       animation: {
-        scroll: 'scroll 20s linear infinite',
+        scroll: 'scroll 15s linear infinite',
       },
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(-150px * 14))' },
+          '100%': { transform: 'translateX(calc(-100px * 14))' },
         },
       },
     },
