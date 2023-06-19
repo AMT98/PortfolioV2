@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { staggerContainer, slideIn } from '../utils/motion';
+import { staggerContainer } from '../utils/motion';
 import { TitleText, TypingText } from '../components';
 
 const Insights = () => (
@@ -21,10 +21,10 @@ const Insights = () => (
         textStyles="text-center"
       />
       <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
+        variants={staggerContainer}
         className="w-full bg-transparent"
       >
-        <div className="h-[200px] m-auto overflow-hidden relative w-auto">
+        <div className="h-[200px] m-auto overflow-hidden relative w-auto mt-10">
           <ul className="flex w-[calc(150px*14)] gap-[64px] animate-scroll">
             <li className="w-[150px]">
               <img src="/html.png" alt="html logo" className="rounded-full " />
