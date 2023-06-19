@@ -12,23 +12,23 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: 'home',
+      link: 'home 🏠',
     },
     {
       id: 2,
-      link: 'about',
+      link: 'about ℹ️',
     },
     {
       id: 3,
-      link: 'projects',
+      link: 'projects 💪🏽',
     },
     {
       id: 4,
-      link: 'experience',
+      link: 'experience ⌨️',
     },
     {
       id: 5,
-      link: 'contact',
+      link: 'contact 📞',
     },
   ];
   const handleLogo = () => window.location.reload();
@@ -36,16 +36,15 @@ const Navbar = () => {
 
     <motion.nav
       variants={navVariants}
-      initial="hidden"
+      initial="show"
       whileInView="show"
-      className="py-8 relative pl-4 z-10"
+      className="relative z-10"
     >
-      <div className="flex justify-between items-center w-full h-20 text-[#C2CCEB] bg-transparent fixed cursor-pointer z-10">
+      <div className="flex justify-between items-center w-full h-20 text-indigo-500 bg-transparent fixed cursor-pointer z-10">
         <div>
-          {/* <h1 className="text-5xl font-signature ml-2 text-[#0EC8AD]">AMT</h1> */}
           <img
             onClick={handleLogo}
-            className="w-12 h-auto mt-3"
+            className="w-12 h-auto mt-3 ml-6"
             src="/websiteLogo.png"
             alt="logo"
           />
@@ -57,9 +56,9 @@ const Navbar = () => {
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
         {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white z-10 text-indigo-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 h-screen bg-black w-[20%] z-10 text-indigo-500">
           {links.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer capitalize py-4 text-xl">
+            <li key={id} className="cursor-pointer capitalize mr-[18%] py-4 text-xl">
               <Link
                 onClick={() => setNav(!nav)}
                 href={link}
