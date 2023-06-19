@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 
-import { MdOutlineSend } from 'react-icons/md';
 import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
@@ -71,11 +70,6 @@ const Feedback = () => (
           >
             Send 🚀
           </button>
-
-          {/* <button className="text-[#0A192F] bg-gradient-to-r from-[#00CDAE] to-[#00CCAF] 0 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-            Send
-          </button> */}
-          <MdOutlineSend size={25} className="ml-1" />
         </form>
 
         <motion.div
