@@ -39,10 +39,10 @@ const Hero = () => (
                   My name is Aswin
                 </h3>
                 <div>
-                  <p className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-[#d7d3d3]">
+                  <p className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-indigo-200">
                     I'm
                     <Typed
-                      className="w-full md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-indigo-500"
+                      className="w-full md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-gray-50"
                       strings={[
                         'a software developer',
                         'a problem solver',

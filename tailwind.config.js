@@ -16,6 +16,15 @@ module.exports = {
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
       },
+      animation: {
+        scroll: 'scroll 40s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(calc(-250px * 14))' },
+        },
+      },
     },
   },
   plugins: [],
