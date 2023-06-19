@@ -12,23 +12,23 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      link: 'home 🏠',
+      link: 'HOME 🏠',
     },
     {
       id: 2,
-      link: 'about ℹ️',
+      link: 'ABOUT ℹ️',
     },
     {
       id: 3,
-      link: 'projects 💪🏽',
+      link: 'PROJECTS 💪🏽',
     },
     {
       id: 4,
-      link: 'experience ⌨️',
+      link: 'EXPERIENCE ⌨️',
     },
     {
       id: 5,
-      link: 'contact 📞',
+      link: 'CONTACT 📞',
     },
   ];
   const handleLogo = () => window.location.reload();
@@ -40,7 +40,7 @@ const Navbar = () => {
       whileInView="show"
       className="relative z-10"
     >
-      <div className="flex justify-between items-center w-full h-20 text-indigo-500 bg-transparent fixed cursor-pointer z-10">
+      <div className="flex justify-between items-center w-full h-20 bg-transparent fixed cursor-pointer z-10">
         <div>
           <img
             onClick={handleLogo}
@@ -51,12 +51,12 @@ const Navbar = () => {
         </div>
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-gray-500"
+          className="cursor-pointer pr-4 z-10 text-blue-500 capitalize"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+          {nav ? <FaTimes size={30} color="#6366F1" /> : <FaBars size={30} color="#6366F1" />}
         </div>
         {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 h-screen bg-black w-[20%] z-10 text-indigo-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 h-screen bg-indigo-500 w-screen sm:w-[20%] z-10 text-gray-800 font-bold rounded-tl-lg rounded-tb-lg capitalize focus:outline">
           {links.map(({ id, link }) => (
             <li key={id} className="cursor-pointer capitalize mr-[18%] py-4 text-xl">
               <Link
