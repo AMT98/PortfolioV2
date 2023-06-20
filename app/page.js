@@ -3,7 +3,11 @@ import { About, Projects, Contact, Hero, Experience } from '../sections';
 
 const Page = () => (
   <div className="bg-black overflow-hidden">
-    <Navbar />
+    <div className="mb-10">
+      <Navbar />
+
+    </div>
+
     <Hero />
     <div className="relative">
       <About />
