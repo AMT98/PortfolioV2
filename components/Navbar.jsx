@@ -53,11 +53,15 @@ const Navbar = () => {
       },
     },
   };
+  const itemExit = {
+    initial: { opacity: 1, y: 0 },
+    animate: { opacity: 0, y: 90 },
+  };
   return (
-
-    <AnimatePresence className="mb-10">
+    <AnimatePresence>
       <motion.div
-        exit="exit" className="flex justify-between items-center w-full h-20 z-20 fixed cursor-pointer bg-black mb-20 backdrop-blur-[100px]"
+        exit="exit"
+        className="flex justify-between items-center w-full h-20 z-20 fixed cursor-pointer mb-20 bg-black"
       >
         <div onClick={handleLogo} className="mt-[25px]">
           <svg
@@ -99,53 +103,47 @@ const Navbar = () => {
               </text>
             </g>
           </svg>
-
         </div>
         <div
           onClick={() => setNav(!nav)}
           className="cursor-pointer pr-4 text-blue-500 capitalize z-20"
         >
-          {nav ? <FaTimes size={30} color="red" /> : <FaBars size={30} color="#4C51BF" />}
+          {nav ? (
+            <FaTimes size={30} color="red" />
+          ) : (
+            <FaBars size={30} color="#4C51BF" />
+          )}
         </div>
         {nav && (
-        <motion.ul variants={item}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          exit="exit"
-          className="flex flex-col backdrop-blur-[5px] justify-center items-center absolute top-0 right-0 h-screen bg-gray-200 w-screen sm:w-[20%] text-gray-800 font-bold rounded-tl-lg rounded-tb-lg capitalize focus:outline"
-        >
-          {links.map(({ id, link, enterDelay, exitDelay }) => (
-            <li key={id} className="cursor-pointer capitalize py-4 text-xl">
-              <Link
-                onClick={() => setNav(!nav)}
-                href={link}
-                smooth
-                duration={500}
-              >
-                <motion.p initial={{ y: 80, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: enterDelay }}
-                  exit={{
-                    opacity: 0,
-                    y: 90,
-                    transition: {
-                      ease: 'easeInOut',
-                      delay: exitDelay,
-                    },
-                  }}
+          <motion.ul
+            variants={item}
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: '100vh', opacity: 1 }}
+            transition={{ duration: 0.5, staggerChildren: 0.1, delayChildren: 0.5 }}
+            exit={{ ...item, staggerChildren: 0.1 }}
+            className="flex flex-col backdrop-blur-[5px] justify-center items-center absolute top-0 right-0 h-screen bg-black w-screen sm:w-[20%] text-indigo-500 font-bold rounded-tl-lg rounded-tb-lg capitalize focus:outline"
+          >
+            {links.map(({ id, link, enterDelay, exitDelay }, index) => (
+              <li key={id} className="cursor-pointer capitalize py-4 text-xl">
+                <Link
+                  onClick={() => setNav(!nav)}
+                  href={link}
                 >
-
-                  {link}
-                </motion.p>
-              </Link>
-            </li>
-          ))}
-        </motion.ul>
+                  <motion.p
+                    initial={{ y: 80, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: enterDelay }}
+                    exit={{ ...itemExit, transition: { delay: exitDelay * index } }}
+                  >
+                    {link}
+                  </motion.p>
+                </Link>
+              </li>
+            ))}
+          </motion.ul>
         )}
       </motion.div>
     </AnimatePresence>
-
   );
 };
 
