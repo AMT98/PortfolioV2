@@ -124,7 +124,7 @@ const Experience = () => (
                 alt="github logo"
                 className="rounded-full"
               />
-              <p className="m-2 p-4 text-[#000000]">Github</p>
+              <p className="m-2 p-4 text-[#ffffff]">Github</p>
             </li>
           </ul>
         </div>

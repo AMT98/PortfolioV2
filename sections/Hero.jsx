@@ -7,7 +7,7 @@ import { FcDocument } from 'react-icons/fc';
 import { HiOutlineMail } from 'react-icons/hi';
 import Typed from 'react-typed';
 import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import { slideIn, staggerContainer, textVariant, fadeIn } from '../utils/motion';
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -42,7 +42,7 @@ const Hero = () => (
                   <p className="md:text-2xl sm:text-xl max-w-7xl  font-bold text-indigo-200">
                     I'm
                     <Typed
-                      className="w-full md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-gray-50"
+                      className="w-full md:text-2xl sm:text-xl text-md sm:max-w-lg font-bold py-1 ml-2 text-indigo-500"
                       strings={[
                         'a software developer',
                         'a problem solver',
@@ -72,6 +72,12 @@ const Hero = () => (
                     <FcDocument size={25} />
                   </p>
                 </div>
+                <motion.img
+                  variants={fadeIn('up', 'tween', 0.3, 1)}
+                  src="/arrow-down.svg"
+                  alt="arrow down"
+                  className="w-[18px] h-[28px] animate-bounce items-center self-center mt-[28px]"
+                />
               </motion.div>
             </div>
           </div>
@@ -80,7 +86,7 @@ const Hero = () => (
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full -mt-[370px]"
+        className="relative w-full -mt-[500px]"
       >
         <div className="absolute w-full h-[300px] rounded-tl-[140px] z-[0] -top-[30px]" />
 

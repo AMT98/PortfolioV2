@@ -1,8 +1,8 @@
 import { Footer, Navbar } from '../components';
-import { About, Projects, Feedback, Hero, Experience, WhatsNew, World } from '../sections';
+import { About, Projects, Contact, Hero, Experience, WhatsNew, World } from '../sections';
 
 const Page = () => (
-  <div className="bg-gray-700 overflow-hidden">
+  <div className="bg-black overflow-hidden">
     <Navbar />
     <Hero />
     <div className="relative">
@@ -19,7 +19,7 @@ const Page = () => (
     <div className="relative">
       <Experience />
       <div />
-      <Feedback />
+      <Contact />
     </div>
     <Footer />
   </div>

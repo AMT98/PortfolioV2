@@ -22,7 +22,7 @@ const Projects = () => {
       >
         <TypingText title="| Projects" textStyles="text-center" />
         <TitleText
-          title={<>Some of the projects <br className="md:block hidden" /> I have built</>}
+          title={<>Some of my work <br className="md:block hidden" /></>}
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">

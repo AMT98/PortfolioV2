@@ -5,7 +5,7 @@ import GetStarted from './GetStarted';
 import WhatsNew from './WhatsNew';
 import World from './World';
 import Experience from './Experience';
-import Feedback from './Feedback';
+import Contact from './Contact';
 
 export {
   Hero,
@@ -15,5 +15,5 @@ export {
   WhatsNew,
   World,
   Experience,
-  Feedback,
+  Contact,
 };
