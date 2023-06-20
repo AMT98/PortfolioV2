@@ -7,7 +7,7 @@ import { staggerContainer } from '../utils/motion';
 import { TitleText, TypingText } from '../components';
 
 const Experience = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section id="experience-section" className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"

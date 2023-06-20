@@ -4,38 +4,38 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Link from 'next/link';
+// import Link from 'next/link';
 // import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const links = [
     {
-      id: 1,
+      id: 'home-section',
       link: 'HOME 🏠',
       enterDelay: 0.8,
       exitDelay: 1,
     },
     {
-      id: 2,
+      id: 'about-section',
       link: 'ABOUT ℹ️',
       enterDelay: 0.7,
       exitDelay: 0.8,
     },
     {
-      id: 3,
+      id: 'project-section',
       link: 'PROJECTS 💪🏽',
       enterDelay: 0.6,
       exitDelay: 0.6,
     },
     {
-      id: 4,
+      id: 'experience-section',
       link: 'EXPERIENCE ⌨️',
       enterDelay: 0.5,
       exitDelay: 0.4,
     },
     {
-      id: 5,
+      id: 'contact-section',
       link: 'CONTACT 📞',
       enterDelay: 0.4,
       exitDelay: 0.2,
@@ -53,6 +53,13 @@ const Navbar = () => {
       },
     },
   };
+  const scrollToSection = (id) => {
+    const targetElement = document.getElementById(id); // Get the target element by its ID
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth', duration: 500 }); // Scroll to the target element
+    }
+  };
+
   const itemExit = {
     initial: { opacity: 1, y: 0 },
     animate: { opacity: 0, y: 90 },
@@ -124,20 +131,17 @@ const Navbar = () => {
             className="flex flex-col backdrop-blur-[5px] justify-center items-center absolute top-0 right-0 h-screen bg-black w-screen sm:w-[20%] text-indigo-500 font-bold rounded-tl-lg rounded-tb-lg capitalize focus:outline"
           >
             {links.map(({ id, link, enterDelay, exitDelay }, index) => (
-              <li key={id} className="cursor-pointer capitalize py-4 text-xl">
-                <Link
+              <li key={id} onClick={() => scrollToSection(id)} className="cursor-pointer capitalize py-4 text-xl">
+                <motion.p
+                  initial={{ y: 80, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: enterDelay }}
+                  exit={{ ...itemExit, transition: { delay: exitDelay * index } }}
                   onClick={() => setNav(!nav)}
-                  href={link}
                 >
-                  <motion.p
-                    initial={{ y: 80, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: enterDelay }}
-                    exit={{ ...itemExit, transition: { delay: exitDelay * index } }}
-                  >
-                    {link}
-                  </motion.p>
-                </Link>
+                  {link}
+                </motion.p>
+
               </li>
             ))}
           </motion.ul>

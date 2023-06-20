@@ -3,7 +3,7 @@ import { About, Projects, Contact, Hero, Experience } from '../sections';
 
 const Page = () => (
   <div className="bg-black overflow-hidden">
-    <div className="mb-10">
+    <div className="mb-11">
       <Navbar />
     </div>
     <Hero />
