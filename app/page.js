@@ -5,9 +5,7 @@ const Page = () => (
   <div className="bg-black overflow-hidden">
     <div className="mb-10">
       <Navbar />
-
     </div>
-
     <Hero />
     <div className="relative">
       <About />

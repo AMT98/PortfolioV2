@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { exploreWorlds } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { ExploreCard, TitleText, TypingText } from '../components';
+import { ProjectCard, TitleText, TypingText } from '../components';
 
 const Projects = () => {
   const [active, setActive] = useState('world-1');
@@ -27,7 +27,7 @@ const Projects = () => {
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (
-            <ExploreCard
+            <ProjectCard
               key={world.id}
               {...world}
               index={index}
