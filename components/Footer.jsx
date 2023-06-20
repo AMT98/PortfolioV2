@@ -23,7 +23,45 @@ const Footer = () => (
 
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white">
-            Aswin Malla
+            <svg
+              aria-label="Home"
+              id="logo"
+              enableBackground="new 0 0 300 300"
+              height={100}
+              viewBox="0 0 300 300"
+              width={100}
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominantBaseline="middle"
+                  textAnchor="middle"
+                  fill="none"
+                  stroke="#4c51bf"
+                  strokeWidth="3"
+                  fontFamily="Arial, sans-serif"
+                  fontSize="100"
+                  fontWeight="bold"
+                >
+                  A
+                </text>
+                <text
+                  x="50%"
+                  y="50%"
+                  dominantBaseline="middle"
+                  textAnchor="middle"
+                  fill="#4c51bf"
+                  fontFamily="Arial, sans-serif"
+                  fontSize="60"
+                  fontWeight="bold"
+                >
+                  A
+                </text>
+              </g>
+            </svg>
           </h4>
           <p className="font-normal text-[14px] text-white opacity-50">
             Copyright © 2023 Aswin Malla. All rights reserved.
