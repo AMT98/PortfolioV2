@@ -100,7 +100,7 @@ const Experience = () => (
                 alt="postgrSQL logo"
                 className="rounded-full"
               />
-              <p className="m-2 p-4 text-[#92cef4]">PostgrSQL</p>
+              <p className="m-2 p-4 text-[#92cef4]">PostgreSQL</p>
             </li>
             <li className="w-[100px] h-auto flex flex-col justify-center items-center m-2">
               <img

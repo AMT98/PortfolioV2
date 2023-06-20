@@ -7,7 +7,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} relative z-10 mt-[100px]`}>
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
@@ -20,7 +20,7 @@ const About = () => (
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
-        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center w-[50%] text-secondary-white"
+        className="mt-[8px] font-normal sm:text-[20px] text-[12px] text-center sm:w-[50%] w-full text-secondary-white"
       >
         <span className="font-extrabold text-indigo-500">I am a full-stack developer </span> {' '}with experience working with the
         PERN stack

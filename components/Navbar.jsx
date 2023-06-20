@@ -36,29 +36,61 @@ const Navbar = () => {
 
     <motion.nav
       variants={navVariants}
-      initial="show"
-      whileInView="show"
-      className="relative z-10"
+      className=" bg-gray-200 mb-10"
     >
-      <div className="flex justify-between items-center w-full h-20 bg-transparent fixed cursor-pointer z-10">
-        <div>
-          <img
-            onClick={handleLogo}
-            className="w-12 h-auto mt-3 ml-6"
-            src="/websiteLogo.png"
-            alt="logo"
-          />
+      <div className="flex justify-between items-center w-full h-20 z-20 fixed cursor-pointer bg-black mb-10 backdrop-blur-[100px]">
+        <div onClick={handleLogo} className="mt-[25px]">
+          <svg
+            aria-label="Home"
+            id="logo"
+            enableBackground="new 0 0 300 300"
+            height={140}
+            viewBox="0 0 300 300"
+            width={140}
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+          >
+            <g>
+              <text
+                x="50%"
+                y="50%"
+                dominantBaseline="middle"
+                textAnchor="middle"
+                fill="none"
+                stroke="#4c51bf"
+                strokeWidth="3"
+                fontFamily="Arial, sans-serif"
+                fontSize="100"
+                fontWeight="bold"
+              >
+                A
+              </text>
+              <text
+                x="50%"
+                y="50%"
+                dominantBaseline="middle"
+                textAnchor="middle"
+                fill="#4c51bf"
+                fontFamily="Arial, sans-serif"
+                fontSize="60"
+                fontWeight="bold"
+              >
+                A
+              </text>
+            </g>
+          </svg>
+
         </div>
         <div
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-blue-500 capitalize"
+          className="cursor-pointer pr-4 text-blue-500 capitalize z-20"
         >
-          {nav ? <FaTimes size={30} color="#6366F1" /> : <FaBars size={30} color="#6366F1" />}
+          {nav ? <FaTimes size={30} color="red" /> : <FaBars size={30} color="#4C51BF" />}
         </div>
         {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 h-screen bg-indigo-500 w-screen sm:w-[20%] z-10 text-gray-800 font-bold rounded-tl-lg rounded-tb-lg capitalize focus:outline">
+        <ul className="flex flex-col backdrop-blur-[5px] justify-center items-center absolute top-0 right-0 h-screen bg-gray-200 w-screen sm:w-[20%] text-gray-800 font-bold rounded-tl-lg rounded-tb-lg capitalize focus:outline">
           {links.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer capitalize mr-[18%] py-4 text-xl">
+            <li key={id} className="cursor-pointer capitalize py-4 text-xl">
               <Link
                 onClick={() => setNav(!nav)}
                 href={link}

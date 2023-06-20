@@ -59,18 +59,18 @@ const Hero = () => (
                 </div>
 
                 <div className="rounded-xl flex gap-3 p-2 mt-4">
-                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                  <a href="https://www.github.com/AMT98" title="Github" target="_blank" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1" rel="noreferrer">
                     <FaGithub size={25} color="white" />
-                  </p>
-                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                  </a>
+                  <a href="https://www.linkedin.com/aswinmalla" title="Linkedin" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
                     <FaLinkedinIn size={25} color="blue" />
-                  </p>
-                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                  </a>
+                  <a href="mailto: aswinmalla12@gmail.com" type="email" title="Email" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
                     <HiOutlineMail size={25} color="red" />
-                  </p>
-                  <p className="border rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                  </a>
+                  <a href="/Resume_AswinMalla.pdf" download target="_blank" title="Download resume" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
                     <FcDocument size={25} />
-                  </p>
+                  </a>
                 </div>
                 <motion.img
                   variants={fadeIn('up', 'tween', 0.3, 1)}
@@ -86,25 +86,15 @@ const Hero = () => (
 
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className="relative w-full -mt-[500px]"
+        className="relative w-full -mt-[450px]"
       >
         <div className="absolute w-full h-[300px] rounded-tl-[140px] z-[0] -top-[30px]" />
 
         <img
           src="/map.png"
           alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] relative"
         />
-
-        <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
-              src="/resumeStamp.png"
-              alt="stamp"
-              className="sm:w-[205px] w-[150px] sm:h-[155px] h-[150px] object-contain"
-            />
-          </div>
-        </a>
       </motion.div>
     </motion.div>
   </section>
