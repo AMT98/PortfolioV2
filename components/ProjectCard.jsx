@@ -31,7 +31,7 @@ const ProjectCard = ({ id, imgUrl, title, index, active, handleClick }) => (
           <div>
 
             <div
-              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-full border text-white  glassmorphism mb-[16px]`}
             >
               <FaGithub />
             </div>
@@ -42,7 +42,7 @@ const ProjectCard = ({ id, imgUrl, title, index, active, handleClick }) => (
           <div>
 
             <div
-              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
+              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-full border text-white glassmorphism mb-[16px]`}
             >
               <MdPreview />
             </div>

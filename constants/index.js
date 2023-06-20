@@ -1,26 +1,26 @@
-export const exploreWorlds = [
+export const projects = [
   {
-    id: 'world-1',
+    id: '1',
     imgUrl: '/codeThreads.PNG',
     title: 'CodeThreads 🧑🏽‍💻',
   },
   {
-    id: 'world-2',
+    id: '2',
     imgUrl: '/fitnessTracker.PNG',
     title: 'Fitness Tracker 🧑🏽‍💻',
   },
   {
-    id: 'world-3',
+    id: '3',
     imgUrl: '/strangersThings.PNG',
     title: 'Strangers Things 🧑🏽‍💻',
   },
   {
-    id: 'world-4',
+    id: '4',
     imgUrl: '/portfolioV2.PNG',
     title: 'Portfolio Website 🧑🏽‍💻',
   },
   {
-    id: 'world-5',
+    id: '5',
     imgUrl: '/artProject.PNG',
     title: 'Art Collector 🧑🏽‍💻',
   },
