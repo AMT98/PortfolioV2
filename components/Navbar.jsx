@@ -56,7 +56,7 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const targetElement = document.getElementById(id);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth', duration: 500 }); // Scroll to the target element
+      targetElement.scrollIntoView({ behavior: 'smooth', duration: 500 });
     }
   };
 
