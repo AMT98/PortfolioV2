@@ -70,7 +70,7 @@ const Hero = () => {
                     <a href="https://www.github.com/AMT98" title="Github" target="_blank" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1" rel="noreferrer">
                       <FaGithub size={25} color="white" />
                     </a>
-                    <a href="https://www.linkedin.com/in/aswinmalla/" title="Linkedin" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
+                    <a href="https://www.linkedin.com/in/aswinmalla/" target="_blank" title="Linkedin" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1" rel="noreferrer">
                       <FaLinkedinIn size={25} color="blue" />
                     </a>
                     <a href="mailto: aswinmalla12@gmail.com" type="email" title="Email" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
