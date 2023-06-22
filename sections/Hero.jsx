@@ -18,7 +18,7 @@ const Hero = () => {
   };
   return (
 
-    <section id="home-section" className={`${styles.yPaddings} sm:pl-16 pl-6 mt-[100px]`}>
+    <section id="home-section" className={`${styles.yPaddings} sm:pl-16 pl-6 mt-[60px]`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
