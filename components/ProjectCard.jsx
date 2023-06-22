@@ -7,7 +7,7 @@ import { MdPreview } from 'react-icons/md';
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
-const ProjectCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+const ProjectCard = ({ id, imgUrl, title, index, active, handleClick, githubUrl, liveUrl }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -30,22 +30,26 @@ const ProjectCard = ({ id, imgUrl, title, index, active, handleClick }) => (
 
           <div>
 
-            <div
-              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-full border text-white  glassmorphism mb-[16px]`}
+            <a
+              href={githubUrl}
+              target="_blank"
+              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-full border text-white  glassmorphism mb-[16px]`} rel="noreferrer"
             >
               <FaGithub />
-            </div>
+            </a>
             <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
               Github
             </p>
           </div>
           <div>
 
-            <div
-              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-full border text-white glassmorphism mb-[16px]`}
+            <a
+              href={liveUrl}
+              target="_blank"
+              className={`${styles.flexCenter} w-[60px] animate-pulse hover:animate-bounce h-[60px] rounded-full border text-white glassmorphism mb-[16px]`} rel="noreferrer"
             >
               <MdPreview />
-            </div>
+            </a>
             <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase ml-1">
               Demo
             </p>

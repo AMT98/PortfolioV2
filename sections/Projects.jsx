@@ -26,10 +26,10 @@ const Projects = () => {
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {projects.map((world, index) => (
+          {projects.map((project, index) => (
             <ProjectCard
-              key={world.id}
-              {...world}
+              key={project.id}
+              {...project}
               index={index}
               active={active}
               handleClick={setActive}
