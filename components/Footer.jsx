@@ -69,16 +69,16 @@ const Footer = () => (
 
           <div className="flex gap-4">
             <a href="https://www.github.com/AMT98" title="Github" target="_blank" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1" rel="noreferrer">
-              <FaGithub size={15} color="white" />
+              <FaGithub size={25} color="white" />
             </a>
             <a href="https://www.linkedin.com/in/aswinmalla/" target="_blank" title="Linkedin" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1" rel="noreferrer">
               <FaLinkedinIn size={25} color="blue" />
             </a>
             <a href="mailto: aswinmalla12@gmail.com" type="email" title="Email" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
-              <HiOutlineMail size={15} color="red" />
+              <HiOutlineMail size={25} color="red" />
             </a>
             <a href="/Resume_AswinMalla.pdf" download target="_blank" title="Download resume" className="border hover:animate-pulse rounded-full border-transparent flex bg-indigo-500 p-2 m-1">
-              <FcDocument size={15} />
+              <FcDocument size={25} />
             </a>
           </div>
         </div>
