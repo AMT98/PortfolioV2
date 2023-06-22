@@ -8,7 +8,7 @@ import { TypingText } from '../components';
 
 const Contact = () => {
   const scrollToSection = (id) => {
-    const targetElement = document.getElementById(id); // Get the target element by its ID
+    const targetElement = document.getElementById(id);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth', duration: 500 }); // Scroll to the target element
     }
