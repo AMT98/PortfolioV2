@@ -30,6 +30,8 @@ const Projects = () => {
             <ProjectCard
               key={project.id}
               {...project}
+              githubUrl={project.github}
+              liveUrl={project.liveSite}
               index={index}
               active={active}
               handleClick={setActive}
